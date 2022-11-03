@@ -1,6 +1,6 @@
 defmodule SeriesUtils do
   def count_numbers_series(msg, amount, cont, lower_limit, upper_limit) when cont <= upper_limit do
-    msg = msg <> "#{cont}"
+    msg = "#{msg}#{cont}"
     number = String.to_integer(msg)
     if cont >= lower_limit do
       IO.puts(number)
